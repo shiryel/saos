@@ -13,21 +13,52 @@
   // for some reason the 'bind:this={box}' on div stops working after npm run build... so... workaround time >:|
   const countainer = `__saos-${Math.random()}__`;
 
-  onMount(() => {
-    function verify() {
-      // for some reason the 'bind:this={box}' on div stops working after npm run build... so... workaround time >:|
-      const box = document.getElementById(countainer);
-      const c = box.getBoundingClientRect();
-      observing = c.top + top < window.innerHeight && c.bottom - bottom > 0;
+  /// current in experimental support, no support for IE (only Edge)
+  /// see more in: https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver
+  function intersection_verify(box) {
+    // bottom left top right
+    const rootMargin = `${-bottom}px 0px ${-top}px 0px`;
 
-      if (observing && once) {
-        window.removeEventListener("scroll", verify);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        observing = entries[0].isIntersecting;
+        if (observing && once) {
+          observer.unobserve(box);
+        }
+      },
+      {
+        rootMargin,
       }
+    );
+
+    observer.observe(box);
+    return () => observer.unobserve(box);
+  }
+
+  /// Fallback in case the browser not have the IntersectionObserver
+  function bounding_verify(box) {
+    const c = box.getBoundingClientRect();
+    observing = c.top + top < window.innerHeight && c.bottom - bottom > 0;
+
+    if (observing && once) {
+      window.removeEventListener("scroll", verify);
     }
 
-    window.addEventListener("scroll", verify);
+    window.addEventListener("scroll", bounding_verify);
+    return () => window.removeEventListener("scroll", bounding_verify);
+  }
 
-    return () => window.removeEventListener("scroll", verify);
+  onMount(() => {
+    // for some reason the 'bind:this={box}' on div stops working after npm run build... so... workaround time >:|
+    const box = document.getElementById(countainer);
+
+    if (IntersectionObserver) {
+      console.debug("using intersection observer")
+      return intersection_verify(box);
+    } else {
+      console.debug("using bounding")
+      return bounding_verify(box);
+    }
   });
 </script>
 
