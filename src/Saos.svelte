@@ -18,7 +18,7 @@
       // for some reason the 'bind:this={box}' on div stops working after npm run build... so... workaround time >:|
       const box = document.getElementById(countainer);
       const c = box.getBoundingClientRect();
-      observing = c.top - top < window.innerHeight && c.bottom + bottom > 0;
+      observing = c.top + top < window.innerHeight && c.bottom - bottom > 0;
 
       if (observing && once) {
         window.removeEventListener("scroll", verify);

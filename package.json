@@ -1,6 +1,6 @@
 {
   "name": "saos",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Svelte Animation on Scroll",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -11,7 +11,8 @@
     "svelte",
     "css",
     "animation",
-    "animation-on-scroll"
+    "animation-on-scroll",
+    "animate-on-scroll"
   ],
   "repository": "git@github.com:shiryel/saos.git",
   "author": "Shiryel <shiryel@hotmail.com>",
