@@ -16,7 +16,6 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "particlesjs": "^2.2.3",
     "saos": "^1.0.3",
     "sirv-cli": "^0.4.4"
   }

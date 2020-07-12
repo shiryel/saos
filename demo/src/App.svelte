@@ -1,40 +1,5 @@
 <script>
   import Animations from "./Animations.svelte";
-  import Particles from "particlesjs";
-  import { onMount } from "svelte";
-
-  onMount(() => {
-    Particles.init({
-      selector: ".particles",
-      color: ["#DA0463", "#404B69", "#DBEDF3"],
-      connectParticles: true,
-      maxParticles: 100,
-      responsive: [
-        {
-          breakpoint: 768,
-          options: {
-            maxParticles: 50,
-            color: "#48F2E3",
-            connectParticles: false,
-          },
-        },
-        {
-          breakpoint: 425,
-          options: {
-            maxParticles: 25,
-            connectParticles: true,
-          },
-        },
-        {
-          breakpoint: 320,
-          options: {
-            maxParticles: 10,
-            connectParticles: true,
-          },
-        },
-      ],
-    });
-  });
 </script>
 
 <style>
@@ -44,6 +9,7 @@
     grid-template-rows: auto;
     justify-items: center;
     margin: 0 auto;
+    background-image: linear-gradient(to bottom right, #61427A, #151019);
     overflow: hidden;
   }
 
@@ -61,7 +27,6 @@
   footer {
     margin-top: 3em;
     margin-bottom: 5em;
-    background-color: rgb(21, 16, 25);
   }
 
   footer section {
@@ -94,43 +59,51 @@
     padding: 4em;
   }
 
-  .particles {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(21, 16, 25);
-    z-index: -1;
-  }
-
   @media (min-width: 1000px) {
-  aside {
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    padding: 4em;
-  }
+    aside {
+      position: fixed;
+      display: block;
+      top: 0;
+      right: 0;
+      padding: 4em;
+    }
   }
 </style>
 
 <aside>
-<a class="github-button" href="https://github.com/shiryel/saos" data-icon="octicon-star" data-size="large" aria-label="Star shiryel/saos on GitHub">Star</a>
+  <a
+    class="github-button"
+    href="https://github.com/shiryel/saos"
+    data-icon="octicon-star"
+    data-size="large"
+    aria-label="Star shiryel/saos on GitHub">
+    Star
+  </a>
 </aside>
 <main>
-  <canvas class="particles" />
   <h1>SAoS</h1>
   <h2>Svelte Animation on Scroll</h2>
   <Animations />
   <footer>
     <section>
       <h3>SAoS</h3>
-      <a class="github-button" href="https://github.com/shiryel/saos" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Star shiryel/saos on GitHub">Github</a>
-      <a class="github-button" href="https://github.com/shiryel/saos/archive/master.zip" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-download" data-size="large" aria-label="Download shiryel/saos on GitHub">Download</a>
+      <a
+        class="github-button"
+        href="https://github.com/shiryel/saos"
+        data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+        data-size="large"
+        aria-label="Star shiryel/saos on GitHub">
+        Github
+      </a>
+      <a
+        class="github-button"
+        href="https://github.com/shiryel/saos/archive/master.zip"
+        data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+        data-icon="octicon-download"
+        data-size="large"
+        aria-label="Download shiryel/saos on GitHub">
+        Download
+      </a>
     </section>
 
     <section>
