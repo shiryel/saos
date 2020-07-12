@@ -1,4 +1,8 @@
 # Svelte Animation on Scroll
+[![NPM version](https://img.shields.io/npm/v/saos.svg?style=flat)](https://npmjs.org/package/saos)
+![LICENSE](https://img.shields.io/github/license/shiryel/saos)
+
+[![Twitter](https://img.shields.io/twitter/follow/shiryel_.svg?style=social)](https://twitter.com/shiryel_)
 
 A very small svelte component to animate your elements on scroll
 
