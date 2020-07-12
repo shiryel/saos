@@ -53,10 +53,8 @@
     const box = document.getElementById(countainer);
 
     if (IntersectionObserver) {
-      console.debug("using intersection observer")
       return intersection_verify(box);
     } else {
-      console.debug("using bounding")
       return bounding_verify(box);
     }
   });

@@ -1,6 +1,6 @@
 {
   "name": "saos",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Svelte Animation on Scroll",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
