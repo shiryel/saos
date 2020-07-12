@@ -340,13 +340,13 @@
   <Saos
     animation={'slide-in-fwd-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
     animation_out={'scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Slide in Fwd / scale Out Center
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'slide-in-fwd-tr 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}`}
@@ -354,9 +354,9 @@
         {`
         animation_out={'scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
@@ -364,13 +364,13 @@
   <Saos
     animation={'slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
     animation_out={'rotate-out-center 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Slide in Elliptic / Rotate Out Center
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}`}
@@ -378,9 +378,9 @@
         animation_out={'rotate-out-center 0.6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}`}
         <br>
         {`
-        top={400}`}
+        top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
@@ -388,22 +388,22 @@
   <Saos
     animation={'roll-in-left 0.6s ease-out both'}
     animation_out={'rotate-out-2-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Roll In Left / Rotate Out
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'roll-in-left 0.6s ease-out both'}`}
         <br>
         {`animation_out={'rotate-out-2-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
@@ -411,22 +411,22 @@
   <Saos
     animation={'roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both'}
     animation_out={'swirl-out-bck 0.6s ease-in both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Roll In Blurred / Swirl Out Bck
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'roll-in-blurred-left 0.65s cubic-bezier(0.230, 1.000, 0.320, 1.000) both'}`}
         <br>
         {`animation_out={'swirl-out-bck 0.6s ease-in both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
@@ -434,22 +434,22 @@
   <Saos
     animation={'tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
     animation_out={'flip-out-hor-top 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Tilt In Fwd / Flip Out Hor Top
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'tilt-in-fwd-tr 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}`}
         <br>
         {`animation_out={'flip-out-hor-top 0.45s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
@@ -457,22 +457,22 @@
   <Saos
     animation={'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both'}
     animation_out={'slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Swing in Top / Slide Out Top
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both'}`}
         <br>
         {`animation_out={'slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}>`}
+        {`bottom={250}>`}
       </p>
     </div>
   </Saos>
@@ -480,22 +480,22 @@
   <Saos
     animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}
     animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Fade In / Slide Out
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both'}`}
         <br>
         {`animation_out={'slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
@@ -503,22 +503,22 @@
   <Saos
     animation={'puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both'}
     animation_out={'slide-out-elliptic-top-bck 0.7s ease-in both'}
-    top={400}
-    bottom={400}>
+    top={250}
+    bottom={250}>
     <div>
       <p>
         Puff In Center / Slide Out Elliptic Top
         <br />
-        (400 top/bottom)
+        (250 top/bottom)
       </p>
       <p>
         {`animation={'puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both'}`}
         <br>
         {`animation_out={'slide-out-elliptic-top-bck 0.7s ease-in both'}`}
         <br>
-        {`top={400}`}
+        {`top={250}`}
         <br>
-        {`bottom={400}`}
+        {`bottom={250}`}
       </p>
     </div>
   </Saos>
