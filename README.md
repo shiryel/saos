@@ -9,6 +9,8 @@ A very small svelte component to animate your elements on scroll
 
 SAoS allows you to animate once or multiple times a element on scroll, you can define the top and bottom "triggers" and the css of the internal divs (not recomended, but can help in some cases), see below the demo, how install and some examples :smile_cat:
 
+In terms of performance, this lib uses the [Intersection Observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) for most of the browsers (shame on you Internet Explorer)
+
 ### :zap: [Demo](https://shiryel.github.io/saos/)
 
 ---
