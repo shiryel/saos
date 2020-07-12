@@ -1,0 +1,30 @@
+{
+  "name": "saos",
+  "version": "1.0.0",
+  "description": "Svelte Animation on Scroll",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "svelte",
+    "css",
+    "animation",
+    "animation-on-scroll"
+  ],
+  "repository": "git@github.com:shiryel/saos.git",
+  "author": "Shiryel <shiryel@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "svelte": "^3.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/shiryel/saos/issues"
+  },
+  "dependencies": {}
+}
