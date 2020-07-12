@@ -86,6 +86,14 @@
     font-size: 1.2em;
   }
 
+  aside {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 4em;
+  }
+
   .particles {
     position: fixed;
     display: block;
@@ -99,10 +107,20 @@
     z-index: -1;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 1000px) {
+  aside {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    padding: 4em;
+  }
   }
 </style>
 
+<aside>
+<a class="github-button" href="https://github.com/shiryel/saos" data-icon="octicon-star" data-size="large" aria-label="Star shiryel/saos on GitHub">Star</a>
+</aside>
 <main>
   <canvas class="particles" />
   <h1>SAoS</h1>
@@ -111,12 +129,8 @@
   <footer>
     <section>
       <h3>SAoS</h3>
-      <a href="https://github.com/shiryel/saos" target="_blank">Github</a>
-      <a
-        href="https://github.com/shiryel/saos/archive/master.zip"
-        target="_blank">
-        Download
-      </a>
+      <a class="github-button" href="https://github.com/shiryel/saos" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Star shiryel/saos on GitHub">Github</a>
+      <a class="github-button" href="https://github.com/shiryel/saos/archive/master.zip" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-download" data-size="large" aria-label="Download shiryel/saos on GitHub">Download</a>
     </section>
 
     <section>
