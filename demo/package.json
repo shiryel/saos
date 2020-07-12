@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "particlesjs": "^2.2.3",
-    "saos": "^1.0.2",
+    "saos": "^1.0.3",
     "sirv-cli": "^0.4.4"
   }
 }
