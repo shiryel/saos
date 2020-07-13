@@ -1,6 +1,7 @@
 # Svelte Animation on Scroll
 [![NPM version](https://img.shields.io/npm/v/saos.svg?style=flat)](https://npmjs.org/package/saos)
 [![Code Size](https://img.shields.io/github/languages/code-size/shiryel/saos)](https://img.shields.io/github/languages/code-size/shiryel/saos)
+![npm](https://img.shields.io/npm/dt/saos)
 ![LICENSE](https://img.shields.io/github/license/shiryel/saos)
 
 [![Twitter](https://img.shields.io/twitter/follow/shiryel_.svg?style=social)](https://twitter.com/shiryel_)
