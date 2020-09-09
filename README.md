@@ -1,4 +1,5 @@
 # Svelte Animation on Scroll
+![Publish on NPM](https://github.com/shiryel/saos/workflows/Publish%20on%20NPM/badge.svg)
 [![NPM version](https://img.shields.io/npm/v/saos.svg?style=flat)](https://npmjs.org/package/saos)
 [![Code Size](https://img.shields.io/github/languages/code-size/shiryel/saos)](https://img.shields.io/github/languages/code-size/shiryel/saos)
 ![npm](https://img.shields.io/npm/dt/saos)
