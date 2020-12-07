@@ -19,14 +19,16 @@ In terms of performance, this lib uses the [Intersection Observer](https://devel
 
 ## How to install
 
+`Note: You must install this package as a dev dependency to work with SSR`
+
 - Npm
 ```
-npm i saos --save
+npm i saos --save-dev
 ```
 
 - Yarn
 ```
-yarn add saos
+yarn add -D saos
 ```
 
 ## How to use
