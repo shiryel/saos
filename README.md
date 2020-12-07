@@ -19,7 +19,7 @@ In terms of performance, this lib uses the [Intersection Observer](https://devel
 
 ## How to install
 
-`Note: You must install this package as a dev dependency to work with SSR`
+
 
 - Npm
 ```
@@ -30,6 +30,10 @@ npm i saos --save-dev
 ```
 yarn add -D saos
 ```
+
+`Note: If you want to use this lib as a normal dependency on sapper with SSR, make sure to import like this:`
+
+`import Saos from 'saos/src/Saos.svelte';`
 
 ## How to use
 
