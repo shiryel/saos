@@ -31,9 +31,7 @@ npm i saos --save-dev
 yarn add -D saos
 ```
 
-`Note: If you want to use this lib as a normal dependency on sapper with SSR, make sure to import like this:`
-
-`import Saos from 'saos/src/Saos.svelte';`
+Note: **Sapper only supports libs as DEV dependencies**, if you realy want to install this lib as a normal dependency make sure to import like this `import Saos from 'saos/src/Saos.svelte';` or otherwise you will have problems with SSR!
 
 ## How to use
 
