@@ -8,6 +8,7 @@
   export let bottom = 0;
   export let css_observer = "";
   export let css_animation = "";
+  export let isObserving = () => observing;
 
   let observing = true;
   // for some reason the 'bind:this={box}' on div stops working after npm run build... so... workaround time >:|
