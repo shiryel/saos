@@ -11,7 +11,7 @@
   export let css_animation = "";
 
   // cute litle reactive dispatch to get if is observing :3
-	const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher();
   $: dispatch('update', {'observing': observing});
 
   // be aware... he's looking...
