@@ -19,8 +19,6 @@ In terms of performance, this lib uses the [Intersection Observer](https://devel
 
 ## How to install
 
-
-
 - Npm
 ```
 npm i saos --save-dev
@@ -70,6 +68,22 @@ Beyond the animation param, you can use:
 - css_observer -> the css of the div that is the observer, not recomended to use, but is here :cat2:, default: ""
 - css_animation -> the css of the div that is the animation, not recomended to use, but is here :cat2:, default: ""
 
-### [You can see a bunch of usage here](https://github.com/shiryel/saos/blob/master/demo/src/Animations.svelte)
+### And we have reactive dispatchs too!
+
+You can do something like:
+```js
+// Create a handler on your script
+
+function handleObserver(x) {
+  console.info(x.detail.observing);
+}
+
+// Use the `update` event on your html that will be dispatched every time that the `observing` update!
+
+<Saos on:update={handleObserver}>...</Saos>
+```
+And it will work! Amazing no? take a look at the last card on our [demo](https://shiryel.github.io/saos/)
+
+### [And you can see a bunch of usage here](https://github.com/shiryel/saos/blob/master/demo/src/Animations.svelte)
 
 If you are lazy (like me) to create your own animations, take a look at [animista](https://animista.net/play/)

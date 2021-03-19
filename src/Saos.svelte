@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { createEventDispatcher } from 'svelte';
 
   export let animation = "none";
   export let animation_out = "none; opacity: 0";
@@ -8,9 +9,14 @@
   export let bottom = 0;
   export let css_observer = "";
   export let css_animation = "";
-  export let isObserving = () => observing;
 
+  // cute litle reactive dispatch to get if is observing :3
+	const dispatch = createEventDispatcher();
+  $: dispatch('update', {'observing': observing});
+
+  // be aware... he's looking...
   let observing = true;
+
   // for some reason the 'bind:this={box}' on div stops working after npm run build... so... workaround time >:|
   const countainer = `__saos-${Math.random()}__`;
 

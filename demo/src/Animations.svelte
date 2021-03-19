@@ -1,5 +1,9 @@
 <script>
   import Saos from "saos";
+
+  function handleObserver(x) {
+    console.info(x.detail.observing);
+  }
 </script>
 
 <style>
@@ -503,7 +507,8 @@
     animation={'puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both'}
     animation_out={'slide-out-elliptic-top-bck 0.7s ease-in both'}
     top={250}
-    bottom={250}>
+    bottom={250}
+    on:update={handleObserver}>
     <div>
       <p>
         Puff In Center / Slide Out Elliptic Top
@@ -519,6 +524,7 @@
         <br>
         {`bottom={250}`}
       </p>
+      <p>Be aware this card is being observed on console!</p>
     </div>
   </Saos>
 </section>
