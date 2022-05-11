@@ -1,2 +1,4 @@
 /demo
 /docs
+dist/
+.svelte-kit/
