@@ -2,9 +2,9 @@
   "name": "saos",
   "version": "1.2.0",
   "description": "Svelte Animation on Scroll",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "svelte": "src/Saos.svelte",
+  "main": "index.js",
+  "module": "index.mjs",
+  "svelte": "Saos.svelte",
   "scripts": {
     "package": "svelte-kit package"
   },

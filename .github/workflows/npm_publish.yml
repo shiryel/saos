@@ -20,9 +20,11 @@ jobs:
         run: npm i
 
       - name: Build
-        run: npm run build --production
+        run: npm run package --production
 
       - name: Publish on NPM
-        run: npm publish
+        run: |
+          cd package
+          npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
