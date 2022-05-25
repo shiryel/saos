@@ -1,6 +1,6 @@
 {
   "name": "saos",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Svelte Animation on Scroll",
   "main": "index.js",
   "module": "index.mjs",
@@ -21,7 +21,8 @@
   "devDependencies": {
     "@sveltejs/kit": "^1.0.0-next.326",
     "svelte": "^3.48.0",
-    "svelte2tsx": "^0.5.9"
+    "svelte2tsx": "^0.5.9",
+    "typescript": "^4.0.0"
   },
   "bugs": {
     "url": "https://github.com/shiryel/saos/issues"
