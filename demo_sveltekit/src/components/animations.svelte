@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
   import Saos from "saos";
 
-  function handleObserver(x) {
+  function handleObserver(x: CustomEvent<any>) {
     console.info(x.detail.observing);
   }
 </script>
