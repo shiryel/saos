@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher } from "svelte";
 
   export let animation = "none";
   export let animation_out = "none; opacity: 0";
@@ -9,10 +9,12 @@
   export let bottom = 0;
   export let css_observer = "";
   export let css_animation = "";
+  export let styleOverride = "";
+  export let containerStyleOverride = "";
 
   // cute litle reactive dispatch to get if is observing :3
   const dispatch = createEventDispatcher();
-  $: dispatch('update', {'observing': observing});
+  $: dispatch("update", { observing: observing });
 
   // be aware... he's looking...
   let observing = true;
@@ -37,7 +39,6 @@
         rootMargin,
       }
     );
-
     observer.observe(box);
     return () => observer.unobserve(box);
   }
@@ -67,13 +68,13 @@
   });
 </script>
 
-<div id={countainer} style={css_observer}>
+<div id={countainer} style={css_observer, containerStyleOverride}>
   {#if observing}
-    <div style="animation: {animation}; {css_animation}">
+    <div style="animation: {animation}; {css_animation, styleOverride}">
       <slot />
     </div>
   {:else}
-    <div style="animation: {animation_out}; {css_animation}">
+    <div style="animation: {animation_out}; {css_animation, styleOverride}">
       <slot />
     </div>
   {/if}

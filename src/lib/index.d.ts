@@ -11,5 +11,7 @@ declare module 'saos' {
         bottom?: number;
         css_observer?: string;
         css_animation?: string;
+        styleOverride?: string;
+        containerStyleOverride?: string;
     }> {}
 }
