@@ -1,13 +1,10 @@
 {
   "name": "saos",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Svelte Animation on Scroll",
   "main": "index.js",
   "module": "index.mjs",
-  "svelte": "Saos.svelte",
-  "scripts": {
-    "package": "svelte-kit package"
-  },
+  "svelte": "index.js",
   "keywords": [
     "svelte",
     "css",
@@ -27,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/shiryel/saos/issues"
   },
-  "type": "module"
+  "type": "module",
+  "exports": {
+    ".": {
+      "svelte": "./index.js"
+    }
+  }
 }
